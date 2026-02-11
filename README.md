@@ -42,3 +42,5 @@ The CNN that I embed into gpt2 was trained in 10 seconds or less (on 3090), inst
 In addition to trying CNN model trained on blackjack, I also decided to make it harder for me and attempt to do this with classic ML models; they also work, so apparently you can reuse all your classic models you have trained in the past and make your LLMs better at that task by just fusing them.
 
 # What is the use of it?
+You may say: alright, if it worked with a tiny model that you trained for the task, why would you want to put that capabilities inside a bigger LLM model? Because you can take the advantages of both worlds; how you may use the LLM for "reasoning" or "language-directed" tasks will be different to how your specialized model thinks. You can consider this mixture of models as a way of doing "Type1/Type2" thinking, in which the LLM may work towards providing feedback to quick decisions made by the specialized "sidecar model" (wow I like this analogy).
+Remember: you may just train a tiny classic neural network and fuse it later on an LLM to do the task that you have at hand, instead of training the LLM directly.
